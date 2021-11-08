@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  8 12:25:49 2021
+
+@author: hp
+NAMA: AGFAN HERRU PRATAMA
+NIM: 064002100043
+"""
+
+from math import *
+print ("@@@@ @@@@ @@@@ @@@@ @@   @")
+print ("@  @ @    @    @  @ @ @  @")
+print ("@@@@ @ @@ @@@@ @@@@ @  @ @")
+print ("@  @ @@@@ @    @  @ @   @@\n")
+def hitung_jarak_tempuh(v0,t,a) :
+    b=(v0*t)+(0.5*(a*t**2))
+    print('kecepatan awal = ',v0,'waktu = ',t,'dan percepatan : ',a,'hasil',b)
+    return b
+
+v0=int(input("kecepatan awal : "))
+t=int(input("waktu : "))
+a=int(input("percepatan :"))
+hitung_jarak_tempuh(v0, t, a)
