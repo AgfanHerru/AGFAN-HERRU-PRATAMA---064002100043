@@ -1,0 +1,55 @@
+"""Created on Mon Nov  8 13:28:03 2021
+Nama: 'AGFAN HERRU PRATAMA' 
+NIM: 064002100043"""
+
+print ("@@@@ @@@@ @@@@ @@@@ @@   @")
+print ("@  @ @    @    @  @ @ @  @")
+print ("@@@@ @ @@ @@@@ @@@@ @  @ @")
+print ("@  @ @@@@ @    @  @ @   @@\n")
+from math import *
+ulang=2
+while ulang<=2:
+    def kubus (a):
+        print("sisi=",a,"luas=",6*a)
+        return 6*a
+    def tabung(a,b):
+        print('jari jarinya',a,'dan tingginya',b,'hasil',(2*(pi*(a*2)))*(a+b))
+        return (2*(pi*(a*2)))*(a+b)
+    def balok(a,b,c):
+        print('panjangnya',a,'lebarnya',b,'tingginya',c,'hasil',(2*(a*b)) + (2*(a*c)) + (2*(b*c)))
+        return (2*(a*b)) + (2*(a*c)) + (2*(b*c))
+    def kerucut(a,b):
+        print('jari jari',a,'luas alas',b,'hasil',pi*a*(a+b))
+        return pi*a*(a+b)
+    def bola(a):
+        print('jari jari',a,'hasil',4*(pi*(a**2)))
+        return 4*(pi*(a**2))
+    print ("LUAS SETIAP BANGUNAN")
+    print("1.Kubus")
+    print('2.Balok')
+    print('3.Tabung')
+    print('4.Kerucut')
+    print('5.bola')
+    print('6.keluar')
+    option=int(input('silahkan pilih salah satu: '))
+    if option ==1:
+        num=int(input('sisi: '))
+        kubus(num)
+    elif option ==2:
+        num=int(input('panjang: '))
+        num1=int(input('lebar: '))
+        num2=int(input('tinggi:'))
+        balok(num,num1,num2)
+    elif option ==3:
+        num=float(input('jari jari: '))
+        num1=float(input('tinggi: '))
+        float(tabung(num,num1))
+    elif option ==4:
+        num=float(input('jari jari: '))
+        num1=float(input('garis (s): '))
+        kerucut(num,num1)
+    elif option ==5:
+        num=float(input('masukkan jari jari:'))
+        bola(num)
+    elif option ==6:
+        exit(0)
